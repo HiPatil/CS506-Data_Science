@@ -3,6 +3,7 @@ from leisure.leisure import draw_leisure
 from outdoors.outdoors import draw_outdoors
 from education.education import draw_education
 from infrastructure import road, power, tree
+import cv2
 
 def draw_city():
     draw_safety()
@@ -15,6 +16,8 @@ def draw_city():
     tree.draw_tree()
     road.draw_road()
     draw_education()
+
+
     return
 
 draw_city()
